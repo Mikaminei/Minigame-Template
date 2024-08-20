@@ -25,8 +25,6 @@ public class Join implements Listener {
 
         if (Bukkit.getOnlinePlayers().size() >= 3) {
             new PreGameTimer(main).startCountdown();
-        } else if (main.getGamestate() == Gamestates.PREGAME) {
-            return;
         }
     }
 }
