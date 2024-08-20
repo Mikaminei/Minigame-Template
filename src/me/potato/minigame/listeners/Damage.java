@@ -17,7 +17,7 @@ public class Damage implements Listener {
     @EventHandler
     public void onDamage(EntityDamageEvent event) {
         if (event.getEntity().getType() == EntityType.PLAYER) {
-            if (main.getGamestate() == Gamestates.PREGAME || main.getGamestate() == Gamestates.PREGAME) {
+            if (main.getGamestate() == Gamestates.LOBBY || main.getGamestate() == Gamestates.PREGAME) {
                 event.setCancelled(true);
             }
         }
